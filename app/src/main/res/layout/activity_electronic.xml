@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClothingActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clothTitle"
+        android:text="Electronic"
+        android:textSize="36sp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/lavender"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clothImage"
+        android:layout_below="@+id/clothTitle"
+        android:src="@drawable/electronic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"/>
+
+</RelativeLayout>
