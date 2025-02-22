@@ -12,18 +12,53 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    CardView clothingCard;
+    CardView clothingCard, electronicCard;
+    CardView beautyCard, groceriesCard, pharmacyCard;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         clothingCard = findViewById(R.id.clothingCard);
+        electronicCard = findViewById(R.id.electronicCard);
+        beautyCard = findViewById(R.id.beautyCard);
+        groceriesCard = findViewById(R.id.groceriesCard);
+        pharmacyCard = findViewById(R.id.pharmacyCard);
 
         clothingCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ClothingActivity.class);
+                startActivity(intent);
+            }
+        });
+        electronicCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ElectronicActivity.class);
+                startActivity(intent);
+            }
+        }
+        );
+        beautyCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, beautyActivity.class);
+                startActivity(intent);
+            }
+        });
+        groceriesCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GroceriesActivity.class);
+                startActivity(intent);
+            }
+        });
+        pharmacyCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, PharmacyActivity.class);
                 startActivity(intent);
             }
         });

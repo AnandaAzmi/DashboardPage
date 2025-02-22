@@ -6,24 +6,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ElectronicActivity">
+    tools:context=".PharmacyActivity">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ElectronicTitle"
-        android:text="Electronic"
+        android:id="@+id/pharmacyTitle"
+        android:text="Pharmacy"
         android:textSize="36sp"
-        android:layout_marginTop="70dp"
         android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/lavender"
+        android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ElectronicImage"
-        android:layout_below="@+id/ElectronicTitle"
-        android:src="@drawable/electronic"
-        android:layout_marginLeft="10dp"
+        android:id="@+id/pharmacyImage"
+        android:layout_below="@+id/pharmacyTitle"
+        android:src="@drawable/pharmacy"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
-
 </RelativeLayout>
