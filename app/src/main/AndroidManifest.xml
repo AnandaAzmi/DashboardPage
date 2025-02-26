@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Dashboardku"
         tools:targetApi="31">
         <activity
+            android:name=".Background"
+            android:exported="false" />
+        <activity
             android:name=".PharmacyActivity"
             android:exported="false" />
         <activity
