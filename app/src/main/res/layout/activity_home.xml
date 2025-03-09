@@ -6,25 +6,24 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GroceriesActivity">
+    tools:context=".HomeActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/groceriesTitle"
-        android:text="Groceries"
+        android:id="@+id/judulHome"
+        android:text="Home"
         android:textSize="36sp"
+        android:layout_marginTop="70dp"
         android:fontFamily="@font/poppins_semibold"
         android:textColor="@color/lavender"
-        android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/groceriesImage"
-        android:src="@drawable/groceries"
-        android:layout_below="@+id/groceriesTitle"
-        android:layout_marginLeft="20dp"
+        android:id="@+id/gambarmyHome"
+        android:layout_below="@+id/judulHome"
+        android:src="@drawable/home"
+        android:layout_marginLeft="10dp"
         android:layout_marginRight="20dp"/>
-
 </RelativeLayout>

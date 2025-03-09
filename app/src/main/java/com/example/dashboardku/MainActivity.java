@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    CardView clothingCard, electronicCard;
+    CardView clothingCard, electronicCard, homeCard;
     CardView beautyCard, groceriesCard, pharmacyCard;
 
     @Override
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         beautyCard = findViewById(R.id.beautyCard);
         groceriesCard = findViewById(R.id.groceriesCard);
         pharmacyCard = findViewById(R.id.pharmacyCard);
+        homeCard =findViewById(R.id.homeCard);
 
         clothingCard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         );
+        homeCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
         beautyCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

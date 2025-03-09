@@ -18,7 +18,7 @@
         android:textColor="@color/lavender"
         android:layout_marginTop="70dp"
         android:layout_centerHorizontal="true"/>
-    <ImageView
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pharmacyImage"
